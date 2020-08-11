@@ -1,0 +1,19 @@
+extend include/template_base
+
+
+include include/blocks/cabinet-orders
+
+
+block variables
+	-
+		var title = 'Лэндинг';
+
+block content
+	.main-container
+		.all-title
+			| Заказы
+		.all-subtitle
+			| Здравствуйте, &#32;
+			b Максим &#32;
+			| управляйте вашими заказами и оплачивайте их, как вам угодно.
+	+cabinet-orders()

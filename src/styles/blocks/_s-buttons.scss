@@ -1,0 +1,76 @@
+.s-buttons {
+  &__title {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 13px;
+  }
+
+  &__wrap {
+    display: flex;
+    margin: 0 -15px;
+    @include phones {
+      margin: 0 -12px;
+    }
+
+  }
+
+  &__item {
+    margin: 0 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s ease;
+    @include phones {
+      margin: 0 12px;
+      width: 40px;
+      height: 40px;
+    }
+
+    &_mod_tw {
+      background-color: #55acee;
+
+      &:hover {
+        background-color: #4c99d4;
+      }
+    }
+
+    &_mod_fb {
+      background-color: #3b5999;
+
+      &:hover {
+        background-color: #324a80;
+      }
+    }
+
+    &_mod_vk {
+      background-color: #4b729f;
+
+      &:hover {
+        background-color: #416387;
+      }
+    }
+
+    &_mod_ok {
+      background-color: #ff9800;
+
+      &:hover {
+        background-color: #d47508;
+      }
+    }
+
+    &_mod_ya {
+      background-color: #d7143a;
+
+      &:hover {
+        background-color: #b11116;
+      }
+    }
+  }
+
+  &__img {
+  }
+}

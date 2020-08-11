@@ -1,0 +1,87 @@
+.cabinet-reg {
+
+
+  &__wrap {
+  }
+
+  &__row {
+    display: flex;
+    margin: 0 -15px 30px;
+    @include tablets {
+      flex-wrap: wrap;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  &__column {
+    box-shadow: 0 0 50px rgba(178, 178, 178, 0.5);
+    border-radius: 6px;
+    padding: 20px 28px 20px;
+    margin: 0 15px;
+    @include tablets {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &_pos_1 {
+      width: calc(50% - 30px);
+      @include tablets {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+
+    &_pos_2 {
+      width: calc(50% - 30px);
+      @include tablets {
+        width: 100%;
+      }
+    }
+
+    &_pos_3 {
+      width: calc(60% - 30px);
+      @include tablets {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+
+    &_pos_4 {
+      width: calc(40% - 30px);
+      @include tablets {
+        width: 100%;
+      }
+    }
+  }
+
+  &__title-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    color: #47698e;
+    font-size: 24px;
+    font-weight: 700;
+    padding-right: 15px;
+    @include tablets {
+      font-size: 18px;
+
+    }
+  }
+
+  &__btn-wrap {
+    flex-grow: 1;
+
+    &_size_1 {
+      max-width: 137px;
+    }
+
+    &_size_2 {
+      max-width: 170px;
+    }
+  }
+}

@@ -1,0 +1,88 @@
+.cabinet-reg-list {
+  &__wrap {
+    margin-bottom: -20px;
+    overflow: hidden;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 20px;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 5px;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      background-color: #00caff;
+      border-radius: 50%;
+    }
+
+    &_status_in-work:before {
+      background-color: #00caff;
+    }
+
+    &_status_done:before {
+      background-color: #d0ec59;
+    }
+
+    &_status_cancel:before {
+      background-color: #c02038;
+    }
+  }
+
+  &__column {
+    &_pos_1 {
+      padding-right: 15px;
+    }
+
+    &_pos_2 {
+    }
+  }
+
+  &__inner-wrap {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 3px;
+  }
+
+  &__number {
+    margin-right: 3px;
+    text-decoration: underline;
+    color: #000000;
+
+  }
+  &__price {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  &__date {
+  }
+
+  &__status {
+    color: #585858;
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  &__test {
+  }
+
+  &__test {
+  }
+
+  &__test {
+  }
+
+  &__test {
+  }
+}

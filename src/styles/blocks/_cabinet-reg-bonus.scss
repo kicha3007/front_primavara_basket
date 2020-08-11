@@ -1,0 +1,93 @@
+.cabinet-reg-bonus {
+  &__input-wrap {
+    padding-top: 15px;
+    margin-bottom: 8px;
+    &_inner_indent_min {
+      padding-top: 0;
+    }
+  }
+  &__input {
+    padding-left: 20px;
+    color: #000000;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  &__input-note {
+    color: #585858;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 35px;
+
+  }
+  &__btn-wrap {
+    max-width: 170px;
+
+  }
+  &__btn {
+    font-size: 11px;
+    font-weight: 400;
+
+  }
+  &__inner-wrap {
+    &_not-active {
+      display: none;
+    }
+    &_acitve {
+      display: block;
+    }
+
+  }
+  &__number {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 3px;
+
+  }
+  &__number-text {
+    color: #585858;
+    font-size: 13px;
+    font-weight: 400;
+
+  }
+  &__bottom {
+    margin-top: 38px;
+    display: flex;
+    @include phones {
+        flex-wrap: wrap;
+    }
+
+  }
+  &__bottom-column {
+    width: 50%;
+    &_pos_1 {
+      padding-right: 15px;
+
+    }
+    &_pos_2 {
+
+    }
+
+  }
+  &__scores-number {
+    color: #767676;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 2px;
+    @include tablets {
+      font-size: 30px;
+    }
+    &_color_1 {
+      color: #c02038;
+    }
+
+  }
+  &__scores-text {
+    color: #585858;
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+
+}

@@ -1,0 +1,29 @@
+include cabinet-reg-personal
+include cabinet-reg-data
+include cabinet-reg-bonus
+include cabinet-reg-list
+
+mixin cabinet-reg()
+	.cabinet-reg&attributes(attributes)
+		.cabinet-reg__container.main-container
+			.cabinet-reg__wrap
+				.cabinet-reg__row
+					.cabinet-reg__column.cabinet-reg__column_pos_1
+						.cabinet-reg__title-wrap
+							.cabinet-reg__title Заказы
+							.cabinet-reg__btn-wrap.cabinet-reg__btn-wrap_size_1
+								a(href="#").cabinet-reg__btn.main-btn-grey Все заказы
+						+cabinet-reg-list()
+
+					.cabinet-reg__column.cabinet-reg__column_pos_2
+						.cabinet-reg__title-wrap
+							.cabinet-reg__title Бонусы
+							.cabinet-reg__btn-wrap.cabinet-reg__btn-wrap_size_2
+								a(href="#").cabinet-reg__btn.main-btn-grey Ввести другую карту
+						+cabinet-reg-bonus()
+
+				.cabinet-reg__row
+					.cabinet-reg__column.cabinet-reg__column_pos_3
+						+cabinet-reg-personal()
+					.cabinet-reg__column.cabinet-reg__column_pos_4
+						+cabinet-reg-data()

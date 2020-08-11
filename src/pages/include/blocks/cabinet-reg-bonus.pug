@@ -1,0 +1,22 @@
+mixin cabinet-reg-bonus()
+	.cabinet-reg-bonus&attributes(attributes)
+		.cabinet-reg-bonus__inner-wrap.cabinet-reg-bonus__inner-wrap_not-active
+			.cabinet-reg-bonus__input-wrap
+				input.cabinet-reg-bonus__input.main-input(name="" type="text")
+			.cabinet-reg-bonus__input-note
+				| Введите номер бонусной карты
+			.cabinet-reg-bonus__btn-wrap
+				.cabinet-reg-bonus__btn.main-btn Подтвердить карту
+		.cabinet-reg-bonus__inner-wrap.cabinet-reg-bonus__inner-wrap_active
+			.cabinet-reg-bonus__input-wrap.cabinet-reg-bonus__input-wrap_inner_indent_min
+				.cabinet-reg-bonus__number 9321 4245
+				.cabinet-reg-bonus__number-text Номер бонусной карты
+			.cabinet-reg-bonus__bottom
+				.cabinet-reg-bonus__bottom-column.cabinet-reg-bonus__bottom-column_pos_1
+					.cabinet-reg-bonus__scores-number.cabinet-reg-bonus__scores-number_color_1 3214
+					.cabinet-reg-bonus__scores-text Количество бонусных баллов
+				.cabinet-reg-bonus__bottom-column.cabinet-reg-bonus__bottom-column_pos_2
+					.cabinet-reg-bonus__scores-number 120
+					.cabinet-reg-bonus__scores-text бонусов начислится 20.10.2020
+
+

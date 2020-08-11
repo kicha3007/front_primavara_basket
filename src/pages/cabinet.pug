@@ -1,0 +1,19 @@
+extend include/template_base
+
+
+include include/blocks/cabinet-reg
+
+
+block variables
+	-
+		var title = 'Лэндинг';
+
+block content
+	.main-container
+		.all-title
+			| Личный кабинет
+		.all-subtitle
+			| Здравствуйте, &#32;
+			b Максим
+			| , добро пожаловать в ваш личный кабинет.
+	+cabinet-reg()

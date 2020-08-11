@@ -1,0 +1,44 @@
+.cabinet-reg-data {
+
+  &__mainn-title {
+    color: #47698e;
+    font-size: 24px;
+    font-weight: 700;
+    @include tablets {
+      font-size: 18px;
+    }
+
+  }
+  &__title-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  &__btn-wrap {
+    max-width: 129px;
+    width: 100%;
+  }
+  &__btn-wrap {
+
+  }
+  &__list {
+    margin-bottom: -30px;
+    overflow: hidden;
+  }
+  &__item {
+    margin-bottom: 30px;
+  }
+  &__title {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 2px;
+
+  }
+  &__subtitle {
+    color: #585858;
+    font-size: 13px;
+    font-weight: 400;
+  }
+}

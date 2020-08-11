@@ -1,0 +1,5 @@
+mixin main-checkbox(data)
+	label.main-checkbox&attributes(attributes)
+		input.main-checkbox__default(type='checkbox', name='AGREE', checked='checked', required='')
+		span.main-checkbox__pseudo
+		span.main-checkbox__text #{data.text}

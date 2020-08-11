@@ -1,0 +1,17 @@
+extend include/template_base
+
+include include/blocks/enter-reg
+
+block variables
+	-
+		var title = 'Лэндинг';
+
+block content
+	.main-container
+		a.btn-prev.btn-prev_indent_bottom(href="#")
+			.btn-prev__wrap
+				img(src="/assets/img/prev-arrow.png", alt='').btn-prev__img
+				.btn-prev__text Назад
+	+enter-reg()(class="enter-reg_indent_bottom")
+
+

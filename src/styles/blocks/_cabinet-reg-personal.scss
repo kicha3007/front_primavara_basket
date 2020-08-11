@@ -1,0 +1,108 @@
+.cabinet-reg-personal {
+  &__mainn-title {
+    color: #47698e;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    @include tablets {
+      font-size: 18px;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    padding: 0 -20px;
+    @include laptop {
+      display: block;
+    }
+  }
+
+  &__column {
+    &_pos_1 {
+      flex-basis: 129px;
+      margin-right: 40px;
+      @include laptop {
+        margin-bottom: 15px;
+        margin-right: 0;
+      }
+    }
+
+    &_pos_2 {
+      flex-grow: 1;
+      flex-basis: 129px;
+      @include laptop {
+      }
+    }
+  }
+
+  &__img-box {
+    overflow: hidden;
+    max-width: 129px;
+    width: 100%;
+    border-radius: 6px;
+    @include laptop {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__title {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    margin-bottom: 10px;
+    max-width: 360px;
+  }
+
+  &__old-price {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: line-through;
+  }
+
+  &__price {
+    color: #c02038;
+    font-size: 40px;
+    font-weight: 700;
+    white-space: nowrap;
+    @include tablets {
+      font-size: 30px;
+    }
+    @include phones {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include phones {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__bottom-column {
+    &_pos_1 {
+    }
+
+    &_pos_2 {
+      flex-basis: 116px;;
+    }
+  }
+
+  &__btn-wrap {
+    max-width: 116px;
+  }
+
+  &__btn {
+  }
+}

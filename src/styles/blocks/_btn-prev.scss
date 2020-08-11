@@ -1,0 +1,24 @@
+.btn-prev {
+  display: block;
+  &_indent_bottom {
+    margin-bottom: 25px;
+
+  }
+  &__wrap {
+    display: flex;
+    align-items: center;
+  }
+    &__img {
+      margin-right: 10px;
+      height: 20px;
+
+    }
+    &__text {
+      color: #767676;
+      font-size: 13px;
+      font-weight: 400;
+
+    }
+
+
+}

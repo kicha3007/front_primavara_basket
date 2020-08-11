@@ -1,0 +1,39 @@
+include main-checkbox
+	include s-buttons
+mixin enter-reg()
+		.main-container
+			.all-title
+				| Вход или регистрация
+		.enter-reg&attributes(attributes)
+			.enter-reg__container.main-container
+				.enter-reg__wrap
+					.enter-reg__column.enter-reg__column_pos_1
+						form(action="", method="post").enter-reg__form
+							.enter-reg__input-item
+								.enter-reg__title
+									| Телефон или Email
+									span.enter-reg__inner-title *
+								.enter-reg__input-wrap
+									input.enter-reg__input.main-input(name="" type="text")
+								.enter-reg__input-note
+									| Для авторизации по номеру телефона введите его в формате: 7XXXXXXXXXX
+							.enter-reg__input-item
+								.enter-reg__title-wrap.enter-reg__title-wrap_mod_row
+									.enter-reg__title
+										| Пароль
+										span.enter-reg__inner-title *
+									a(href="#").enter-reg__second-title Забыли пароль?
+								.enter-reg__input-wrap
+									input.enter-reg__input.main-input(name="" type="text")
+								a(href="#").enter-reg__input-link Войти с помощью кода из SMS
+							.enter-reg__bottom
+								.enter-reg__btn-wrap
+									a(href="#").enter-reg__btn.main-btn Войти
+								.enter-reg__checkbox
+									+main-checkbox({"text": "Запомнить меня"})
+					.enter-reg__column.enter-reg__column_pos_2
+						+s-buttons()
+
+
+
+
