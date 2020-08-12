@@ -1,0 +1,33 @@
+
+mixin cabinet-personal-data()
+	.cabinet-personal-data&attributes(attributes)
+		.cabinet-personal-data__container.main-container
+			form.cabinet-personal-data__form(data-cabinet-personal-data-form)
+				.cabinet-personal-data__main-title Личные данные
+				.cabinet-personal-data__wrap
+					.cabinet-personal-data__column.cabinet-personal-data__column_pos_1
+						.cabinet-personal-data__input-wrap(data-cabinet-personal-data-input-wrap)
+							input.cabinet-personal-data__input.main-input(name="name" type="text" data-cabinet-personal-data-input="name" )
+							.cabinet-personal-data__success
+								img(src="/assets/img/success-check.svg", alt='').cabinet-personal-data__success-img
+						.cabinet-personal-data__note(data-cabinet-personal-data-note="") Имя
+						.cabinet-personal-data__input-wrap(data-cabinet-personal-data-input-wrap)
+							input.cabinet-personal-data__input.main-input(name="email" type="email" data-cabinet-personal-data-input="email")
+							.cabinet-personal-data__success
+								img(src="/assets/img/success-check.svg", alt='').cabinet-personal-data__success-img
+						.cabinet-personal-data__note(data-cabinet-personal-data-note="") Электронная почта
+					.cabinet-personal-data__column.cabinet-personal-data__column_pos_2
+						.cabinet-personal-data__input-wrap(data-cabinet-personal-data-input-wrap)
+							input.cabinet-personal-data__input.main-input(name="password" type="password" data-cabinet-personal-data-input="password")
+							.cabinet-personal-data__success
+								img(src="/assets/img/success-check.svg", alt='').cabinet-personal-data__success-img
+						.cabinet-personal-data__note(data-cabinet-personal-data-note="") Пароль
+						.cabinet-personal-data__input-wrap(data-cabinet-personal-data-input-wrap)
+							input.cabinet-personal-data__input.main-input(name="password_confirm" type="password" data-cabinet-personal-data-input="password-confirm")
+							.cabinet-personal-data__success
+								img(src="/assets/img/success-check.svg", alt='').cabinet-personal-data__success-img
+						.cabinet-personal-data__note(data-cabinet-personal-data-note="") Повторите пароль
+				.cabinet-personal-data__btn-wrap
+					button(data-cabinet-personal-data-btn ).cabinet-personal-data__btn.main-btn Сохранить
+
+

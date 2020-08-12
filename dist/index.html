@@ -18,90 +18,43 @@
       <!--	h1.all-page-title #{titlePage}-->
       <main class="main">
         <div class="main-container">
-          <div class="all-title">Заказы</div>
-          <div class="all-subtitle">Здравствуйте, &#32;<b>Максим &#32;</b>управляйте вашими заказами и оплачивайте их, как вам угодно.</div>
+          <div class="all-title">Редактирование личных данных</div>
+          <div class="all-subtitle">Здравствуйте, &#32;<b>Максим</b>, добро пожаловать в ваш личный кабинет.</div>
         </div>
-        <div class="cabinet-orders">
-          <div class="cabinet-orders__container main-container">
-            <div class="cabinet-orders__year">2020</div>
-            <div class="cabinet-orders__top">
-              <div class="cabinet-orders__top-column cabinet-orders__top-column_pos_1">
-                <div class="cabinet-orders__top-item">
-                  <div class="cabinet-orders__info">
-                    <div class="cabinet-orders__inner-wrap"><a class="cabinet-orders__number" href="#">№ 2342</a><span class="cabinet-orders__date">от 30.06.2020</span></div>
-                    <div class="cabinet-orders__status">в обработке</div>
+        <div class="cabinet-personal-data">
+          <div class="cabinet-personal-data__container main-container">
+            <form class="cabinet-personal-data__form" data-cabinet-personal-data-form="data-cabinet-personal-data-form">
+              <div class="cabinet-personal-data__main-title">Личные данные</div>
+              <div class="cabinet-personal-data__wrap">
+                <div class="cabinet-personal-data__column cabinet-personal-data__column_pos_1">
+                  <div class="cabinet-personal-data__input-wrap" data-cabinet-personal-data-input-wrap="data-cabinet-personal-data-input-wrap">
+                    <input class="cabinet-personal-data__input main-input" name="name" type="text" data-cabinet-personal-data-input="name"/>
+                    <div class="cabinet-personal-data__success"><img class="cabinet-personal-data__success-img" src="/assets/img/success-check.svg" alt=""/></div>
                   </div>
+                  <div class="cabinet-personal-data__note" data-cabinet-personal-data-note="">Имя</div>
+                  <div class="cabinet-personal-data__input-wrap" data-cabinet-personal-data-input-wrap="data-cabinet-personal-data-input-wrap">
+                    <input class="cabinet-personal-data__input main-input" name="email" type="email" data-cabinet-personal-data-input="email"/>
+                    <div class="cabinet-personal-data__success"><img class="cabinet-personal-data__success-img" src="/assets/img/success-check.svg" alt=""/></div>
+                  </div>
+                  <div class="cabinet-personal-data__note" data-cabinet-personal-data-note="">Электронная почта</div>
                 </div>
-                <div class="cabinet-orders__top-list">
-                  <div class="cabinet-orders__top-row">
-                    <div class="cabinet-orders__top-item-column cabinet-orders__top-item-column_pos_1">Синий плательно-блузочный креп-жоржет в горох Ungaro 0219/246</div>
-                    <div class="cabinet-orders__top-item-column cabinet-orders__top-item-column_pos_2">3,2 м</div>
+                <div class="cabinet-personal-data__column cabinet-personal-data__column_pos_2">
+                  <div class="cabinet-personal-data__input-wrap" data-cabinet-personal-data-input-wrap="data-cabinet-personal-data-input-wrap">
+                    <input class="cabinet-personal-data__input main-input" name="password" type="password" data-cabinet-personal-data-input="password"/>
+                    <div class="cabinet-personal-data__success"><img class="cabinet-personal-data__success-img" src="/assets/img/success-check.svg" alt=""/></div>
                   </div>
-                  <div class="cabinet-orders__top-row">
-                    <div class="cabinet-orders__top-item-column cabinet-orders__top-item-column_pos_1">Плательный хлопок шитье белого цвета с цветочным принтом Blumarine 0419/50</div>
-                    <div class="cabinet-orders__top-item-column cabinet-orders__top-item-column_pos_2">10 м</div>
+                  <div class="cabinet-personal-data__note" data-cabinet-personal-data-note="">Пароль</div>
+                  <div class="cabinet-personal-data__input-wrap" data-cabinet-personal-data-input-wrap="data-cabinet-personal-data-input-wrap">
+                    <input class="cabinet-personal-data__input main-input" name="password_confirm" type="password" data-cabinet-personal-data-input="password-confirm"/>
+                    <div class="cabinet-personal-data__success"><img class="cabinet-personal-data__success-img" src="/assets/img/success-check.svg" alt=""/></div>
                   </div>
-                  <div class="cabinet-orders__top-row">
-                    <div class="cabinet-orders__top-item-column cabinet-orders__top-item-column_pos_1">Плательно-блузочный розовый шифон крэш с крупным абстрактным рисунком 111</div>
-                    <div class="cabinet-orders__top-item-column cabinet-orders__top-item-column_pos_2">3,2 м</div>
-                  </div>
-                  <div class="cabinet-orders__top-row">
-                    <div class="cabinet-orders__top-item-column cabinet-orders__top-item-column_pos_1">Плательный хлопок шитье белого цвета с цветочным принтом Blumarine 0419/50</div>
-                    <div class="cabinet-orders__top-item-column cabinet-orders__top-item-column_pos_2">10 м</div>
-                  </div>
-                  <div class="cabinet-orders__top-row">
-                    <div class="cabinet-orders__top-item-column cabinet-orders__top-item-column_pos_1">Плательно-блузочный розовый шифон крэш с крупным абстрактным рисунком 111</div>
-                    <div class="cabinet-orders__top-item-column cabinet-orders__top-item-column_pos_2">3,2 м</div>
-                  </div>
+                  <div class="cabinet-personal-data__note" data-cabinet-personal-data-note="">Повторите пароль</div>
                 </div>
               </div>
-              <div class="cabinet-orders__top-column cabinet-orders__top-column_pos_2">
-                <div class="cabinet-orders__top-price-wrap">
-                  <div class="cabinet-orders__top-price">4350 ₽</div>
-                  <div class="cabinet-orders__top-price-text">ждет оплаты</div>
-                </div><a class="cabinet-orders__btn main-btn" href="#">Оплатить</a>
+              <div class="cabinet-personal-data__btn-wrap">
+                <button class="cabinet-personal-data__btn main-btn" data-cabinet-personal-data-btn="data-cabinet-personal-data-btn">Сохранить</button>
               </div>
-            </div>
-            <div class="cabinet-orders__list"><a class="cabinet-orders__item cabinet-orders__item_status_done" href="#">
-                <div class="cabinet-orders__column cabinet-orders__column_pos_1">
-                  <div class="cabinet-orders__info cabinet-orders__info_color_1">
-                    <div class="cabinet-orders__inner-wrap"><span class="cabinet-orders__number">№ 2342</span><span class="cabinet-orders__date">от 30.06.2020</span></div>
-                    <div class="cabinet-orders__status">в обработке</div>
-                  </div>
-                </div>
-                <div class="cabinet-orders__column cabinet-orders__column_pos_2">
-                  <div class="cabinet-orders__price-wrap">
-                    <div class="cabinet-orders__price">214 000 ₽</div>
-                    <div class="cabinet-orders__price-text">оплачен</div>
-                  </div>
-                  <div class="cabinet-orders__arrow"><img src="assets/img/cabinet-arrow.svg" alt=""/></div>
-                </div></a><a class="cabinet-orders__item cabinet-orders__item_status_cancel" href="#">
-                <div class="cabinet-orders__column cabinet-orders__column_pos_1">
-                  <div class="cabinet-orders__info cabinet-orders__info_color_1">
-                    <div class="cabinet-orders__inner-wrap"><span class="cabinet-orders__number">№ 2342</span><span class="cabinet-orders__date">от 30.06.2020</span></div>
-                    <div class="cabinet-orders__status">в обработке</div>
-                  </div>
-                </div>
-                <div class="cabinet-orders__column cabinet-orders__column_pos_2">
-                  <div class="cabinet-orders__price-wrap">
-                    <div class="cabinet-orders__price">2 000 ₽</div>
-                    <div class="cabinet-orders__price-text">не оплачен</div>
-                  </div>
-                  <div class="cabinet-orders__arrow"><img src="assets/img/cabinet-arrow.svg" alt=""/></div>
-                </div></a><a class="cabinet-orders__item cabinet-orders__item_status_done" href="#">
-                <div class="cabinet-orders__column cabinet-orders__column_pos_1">
-                  <div class="cabinet-orders__info cabinet-orders__info_color_1">
-                    <div class="cabinet-orders__inner-wrap"><span class="cabinet-orders__number">№ 2342</span><span class="cabinet-orders__date">от 30.06.2020</span></div>
-                    <div class="cabinet-orders__status">в обработке</div>
-                  </div>
-                </div>
-                <div class="cabinet-orders__column cabinet-orders__column_pos_2">
-                  <div class="cabinet-orders__price-wrap">
-                    <div class="cabinet-orders__price">3 000 ₽</div>
-                    <div class="cabinet-orders__price-text">оплачен</div>
-                  </div>
-                  <div class="cabinet-orders__arrow"><img src="assets/img/cabinet-arrow.svg" alt=""/></div>
-                </div></a></div>
+            </form>
           </div>
         </div>
       </main>
